@@ -19,10 +19,26 @@ export default function AdminDashboard() {
 
         {/* Dashboard Cards */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-          <DashboardCard title="Manage Students" onClick={() => setActiveTab("students")} />
-          <DashboardCard title="Manage Courses" onClick={() => setActiveTab("courses")} />
-          <DashboardCard title="Manage Attendance" onClick={() => setActiveTab("attendance")} />
-          <DashboardCard title="Manage Exams/CATS" onClick={() => setActiveTab("cats")} />
+          <DashboardCard
+            title="Manage Students"
+            description="View, approve, and manage student records"
+            onClick={() => setActiveTab("students")}
+          />
+          <DashboardCard
+            title="Manage Courses"
+            description="Add, edit, or delete courses"
+            onClick={() => setActiveTab("courses")}
+          />
+          <DashboardCard
+            title="Manage Attendance"
+            description="Track and update student attendance"
+            onClick={() => setActiveTab("attendance")}
+          />
+          <DashboardCard
+            title="Manage Exams/CATS"
+            description="Create and manage exams or CAT scores"
+            onClick={() => setActiveTab("cats")}
+          />
         </div>
 
         {/* Tabbed Interface */}
