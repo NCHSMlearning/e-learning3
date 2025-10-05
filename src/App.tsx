@@ -4,7 +4,7 @@ import AdminDashboard from "./pages/AdminDashboard";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/e-learning3">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/admin" element={<AdminDashboard />} />
